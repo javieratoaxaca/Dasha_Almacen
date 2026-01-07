@@ -1,0 +1,10 @@
+C:\Users\1277_oax\Documents\Visual Studio 2022\Projects\Dasha_Almancen\Dasha_Almancen.Presentacion\bin\Debug\Dasha_Almancen.Presentacion.exe.config
+C:\Users\1277_oax\Documents\Visual Studio 2022\Projects\Dasha_Almancen\Dasha_Almancen.Presentacion\bin\Debug\Dasha_Almancen.Presentacion.exe
+C:\Users\1277_oax\Documents\Visual Studio 2022\Projects\Dasha_Almancen\Dasha_Almancen.Presentacion\bin\Debug\Dasha_Almancen.Presentacion.pdb
+C:\Users\1277_oax\Documents\Visual Studio 2022\Projects\Dasha_Almancen\Dasha_Almancen.Presentacion\obj\Debug\Dasha_Almancen.Presentacion.csproj.AssemblyReference.cache
+C:\Users\1277_oax\Documents\Visual Studio 2022\Projects\Dasha_Almancen\Dasha_Almancen.Presentacion\obj\Debug\Dasha_Almancen.Presentacion.Frm_Articulos.resources
+C:\Users\1277_oax\Documents\Visual Studio 2022\Projects\Dasha_Almancen\Dasha_Almancen.Presentacion\obj\Debug\Dasha_Almancen.Presentacion.Properties.Resources.resources
+C:\Users\1277_oax\Documents\Visual Studio 2022\Projects\Dasha_Almancen\Dasha_Almancen.Presentacion\obj\Debug\Dasha_Almancen.Presentacion.csproj.GenerateResource.cache
+C:\Users\1277_oax\Documents\Visual Studio 2022\Projects\Dasha_Almancen\Dasha_Almancen.Presentacion\obj\Debug\Dasha_Almancen.Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\1277_oax\Documents\Visual Studio 2022\Projects\Dasha_Almancen\Dasha_Almancen.Presentacion\obj\Debug\Dasha_Almancen.Presentacion.exe
+C:\Users\1277_oax\Documents\Visual Studio 2022\Projects\Dasha_Almancen\Dasha_Almancen.Presentacion\obj\Debug\Dasha_Almancen.Presentacion.pdb
