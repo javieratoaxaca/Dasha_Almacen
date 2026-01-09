@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cnx.cs" />
+    <Compile Include="D_Articulos.cs" />
     <Compile Include="Frm_Articulos.cs">
       <SubType>Form</SubType>
     </Compile>
