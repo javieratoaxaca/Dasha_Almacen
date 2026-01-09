@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|c:\\users\\1277_oax\\documents\\visual studio 2022\\projects\\dasha_almancen\\dasha_almancen.presentacion\\frm_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\frm_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|c:\\users\\1277_oax\\documents\\visual studio 2022\\projects\\dasha_almancen\\dasha_almancen.presentacion\\p_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\p_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|c:\\users\\1277_oax\\documents\\visual studio 2022\\projects\\dasha_almancen\\dasha_almancen.presentacion\\cnx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\cnx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +27,37 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Frm_Articulos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Frm_Articulos.cs",
+              "RelativeDocumentMoniker": "Dasha_Almancen.Presentacion\\Frm_Articulos.cs",
+              "ToolTip": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Frm_Articulos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Dasha_Almancen.Presentacion\\Frm_Articulos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T22:40:01.297Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "P_Articulos.cs",
+              "DocumentMoniker": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\P_Articulos.cs",
+              "RelativeDocumentMoniker": "Dasha_Almancen.Presentacion\\P_Articulos.cs",
+              "ToolTip": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\P_Articulos.cs",
+              "RelativeToolTip": "Dasha_Almancen.Presentacion\\P_Articulos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T22:31:03.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Cnx.cs",
               "DocumentMoniker": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Cnx.cs",
               "RelativeDocumentMoniker": "Dasha_Almancen.Presentacion\\Cnx.cs",
               "ToolTip": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Cnx.cs",
               "RelativeToolTip": "Dasha_Almancen.Presentacion\\Cnx.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwDYAAAAAAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwDYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-07T22:44:18.786Z",
               "EditorCaption": ""
