@@ -48,6 +48,9 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtStockActual = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvArticulos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,13 +63,13 @@
             this.dtgvArticulos.Location = new System.Drawing.Point(12, 229);
             this.dtgvArticulos.Name = "dtgvArticulos";
             this.dtgvArticulos.ReadOnly = true;
-            this.dtgvArticulos.Size = new System.Drawing.Size(625, 190);
+            this.dtgvArticulos.Size = new System.Drawing.Size(879, 190);
             this.dtgvArticulos.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 30);
+            this.label1.Location = new System.Drawing.Point(30, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 1;
@@ -75,7 +78,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 74);
+            this.label2.Location = new System.Drawing.Point(32, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 2;
@@ -83,14 +86,14 @@
             // 
             // txtArticulo
             // 
-            this.txtArticulo.Location = new System.Drawing.Point(62, 23);
+            this.txtArticulo.Location = new System.Drawing.Point(80, 16);
             this.txtArticulo.Name = "txtArticulo";
             this.txtArticulo.Size = new System.Drawing.Size(234, 20);
             this.txtArticulo.TabIndex = 3;
             // 
             // txtMedida
             // 
-            this.txtMedida.Location = new System.Drawing.Point(62, 74);
+            this.txtMedida.Location = new System.Drawing.Point(80, 67);
             this.txtMedida.Name = "txtMedida";
             this.txtMedida.Size = new System.Drawing.Size(201, 20);
             this.txtMedida.TabIndex = 4;
@@ -98,7 +101,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(322, 30);
+            this.label3.Location = new System.Drawing.Point(340, 23);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 5;
@@ -107,7 +110,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(305, 74);
+            this.label4.Location = new System.Drawing.Point(323, 67);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 13);
             this.label4.TabIndex = 6;
@@ -115,21 +118,21 @@
             // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(365, 27);
+            this.txtMarca.Location = new System.Drawing.Point(383, 20);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(272, 20);
             this.txtMarca.TabIndex = 7;
             // 
             // txtCategoria
             // 
-            this.txtCategoria.Location = new System.Drawing.Point(365, 74);
+            this.txtCategoria.Location = new System.Drawing.Point(383, 67);
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(238, 20);
             this.txtCategoria.TabIndex = 8;
             // 
             // btnLupaMedida
             // 
-            this.btnLupaMedida.Location = new System.Drawing.Point(269, 74);
+            this.btnLupaMedida.Location = new System.Drawing.Point(287, 67);
             this.btnLupaMedida.Name = "btnLupaMedida";
             this.btnLupaMedida.Size = new System.Drawing.Size(27, 23);
             this.btnLupaMedida.TabIndex = 9;
@@ -138,7 +141,7 @@
             // 
             // btnLupaCategoria
             // 
-            this.btnLupaCategoria.Location = new System.Drawing.Point(609, 74);
+            this.btnLupaCategoria.Location = new System.Drawing.Point(627, 67);
             this.btnLupaCategoria.Name = "btnLupaCategoria";
             this.btnLupaCategoria.Size = new System.Drawing.Size(28, 23);
             this.btnLupaCategoria.TabIndex = 10;
@@ -147,7 +150,7 @@
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(666, 30);
+            this.btnNew.Location = new System.Drawing.Point(907, 30);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(85, 73);
             this.btnNew.TabIndex = 11;
@@ -156,7 +159,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(666, 109);
+            this.btnUpdate.Location = new System.Drawing.Point(907, 109);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(85, 73);
             this.btnUpdate.TabIndex = 12;
@@ -165,7 +168,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(666, 188);
+            this.btnDelete.Location = new System.Drawing.Point(907, 188);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(85, 73);
             this.btnDelete.TabIndex = 13;
@@ -174,7 +177,7 @@
             // 
             // btnReport
             // 
-            this.btnReport.Location = new System.Drawing.Point(666, 267);
+            this.btnReport.Location = new System.Drawing.Point(907, 267);
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(85, 73);
             this.btnReport.TabIndex = 14;
@@ -183,7 +186,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(666, 346);
+            this.btnClose.Location = new System.Drawing.Point(907, 346);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(85, 73);
             this.btnClose.TabIndex = 15;
@@ -192,7 +195,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(274, 173);
+            this.btnCancel.Location = new System.Drawing.Point(288, 106);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(85, 35);
             this.btnCancel.TabIndex = 16;
@@ -201,7 +204,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(379, 173);
+            this.btnSave.Location = new System.Drawing.Point(393, 106);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(85, 35);
             this.btnSave.TabIndex = 17;
@@ -211,7 +214,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(242, 123);
+            this.label5.Location = new System.Drawing.Point(14, 109);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 13);
             this.label5.TabIndex = 18;
@@ -219,16 +222,44 @@
             // 
             // txtStockActual
             // 
-            this.txtStockActual.Location = new System.Drawing.Point(308, 120);
+            this.txtStockActual.Location = new System.Drawing.Point(80, 106);
             this.txtStockActual.Name = "txtStockActual";
             this.txtStockActual.Size = new System.Drawing.Size(63, 20);
             this.txtStockActual.TabIndex = 19;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(287, 188);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(27, 23);
+            this.btnSearch.TabIndex = 22;
+            this.btnSearch.Text = ":::";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(80, 188);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(201, 20);
+            this.txtSearch.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(32, 188);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(43, 13);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Buscar:";
             // 
             // Frm_Articulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(769, 432);
+            this.ClientSize = new System.Drawing.Size(1005, 432);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtStockActual);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnSave);
@@ -280,5 +311,8 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtStockActual;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Label label6;
     }
 }

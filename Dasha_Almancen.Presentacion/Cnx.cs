@@ -23,7 +23,7 @@ namespace Dasha_Almancen.Presentacion
         private static Cnx Cnxn = null;
 
         private Cnx() {
-            this.Base = "bd_almancen";
+            this.Base = "bd_almacen";
             this.Server="localhost";
             this.Port = "3306";
             this.Usuario = "root";

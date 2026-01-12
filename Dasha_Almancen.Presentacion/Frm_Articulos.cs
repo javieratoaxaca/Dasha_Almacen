@@ -16,10 +16,37 @@ namespace Dasha_Almancen.Presentacion
         {
             InitializeComponent();
         }
-
-        private void Frm_Articulos_Load(object sender, EventArgs e)
+        #region
+        private void Formato_Art()
         {
 
+            dtgvArticulos.Columns[0].Width = 80;
+            dtgvArticulos.Columns[0].HeaderText = "Codigo";
+            dtgvArticulos.Columns[1].Width = 250;
+            dtgvArticulos.Columns[1].HeaderText = "Articulo";
+            dtgvArticulos.Columns[2].Width = 150;
+            dtgvArticulos.Columns[2].HeaderText = "Marca";
+            dtgvArticulos.Columns[3].Width = 80;
+            dtgvArticulos.Columns[3].HeaderText = "Medida";
+            dtgvArticulos.Columns[4].Width = 150;
+            dtgvArticulos.Columns[4].HeaderText = "Categoria";
+            dtgvArticulos.Columns[5].Width = 150;
+            dtgvArticulos.Columns[5].HeaderText = "Stock Actual";
+            dtgvArticulos.Columns[6].Visible =false;
+            dtgvArticulos.Columns[7].Visible = false;
+
+
+        }
+        private void Listado_Art(string cTexto)
+        {
+            D_Articulos dt = new D_Articulos();
+            dtgvArticulos.DataSource = dt.ListadoArticulos(cTexto);
+            this.Formato_Art();
+        }
+        #endregion
+        private void Frm_Articulos_Load(object sender, EventArgs e)
+        {
+            this.Listado_Art("%");
         }
     }
 }
