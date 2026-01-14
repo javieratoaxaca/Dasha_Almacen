@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Articulos));
             this.dtgvArticulos = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,7 +40,6 @@
             this.txtCategoria = new System.Windows.Forms.TextBox();
             this.btnLupaMedida = new System.Windows.Forms.Button();
             this.btnLupaCategoria = new System.Windows.Forms.Button();
-            this.btnNew = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
@@ -51,6 +51,7 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnNew = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvArticulos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,6 +89,7 @@
             // 
             this.txtArticulo.Location = new System.Drawing.Point(80, 16);
             this.txtArticulo.Name = "txtArticulo";
+            this.txtArticulo.ReadOnly = true;
             this.txtArticulo.Size = new System.Drawing.Size(234, 20);
             this.txtArticulo.TabIndex = 3;
             // 
@@ -95,6 +97,7 @@
             // 
             this.txtMedida.Location = new System.Drawing.Point(80, 67);
             this.txtMedida.Name = "txtMedida";
+            this.txtMedida.ReadOnly = true;
             this.txtMedida.Size = new System.Drawing.Size(201, 20);
             this.txtMedida.TabIndex = 4;
             // 
@@ -120,6 +123,7 @@
             // 
             this.txtMarca.Location = new System.Drawing.Point(383, 20);
             this.txtMarca.Name = "txtMarca";
+            this.txtMarca.ReadOnly = true;
             this.txtMarca.Size = new System.Drawing.Size(272, 20);
             this.txtMarca.TabIndex = 7;
             // 
@@ -127,11 +131,13 @@
             // 
             this.txtCategoria.Location = new System.Drawing.Point(383, 67);
             this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.ReadOnly = true;
             this.txtCategoria.Size = new System.Drawing.Size(238, 20);
             this.txtCategoria.TabIndex = 8;
             // 
             // btnLupaMedida
             // 
+            this.btnLupaMedida.Enabled = false;
             this.btnLupaMedida.Location = new System.Drawing.Point(287, 67);
             this.btnLupaMedida.Name = "btnLupaMedida";
             this.btnLupaMedida.Size = new System.Drawing.Size(27, 23);
@@ -141,6 +147,7 @@
             // 
             // btnLupaCategoria
             // 
+            this.btnLupaCategoria.Enabled = false;
             this.btnLupaCategoria.Location = new System.Drawing.Point(627, 67);
             this.btnLupaCategoria.Name = "btnLupaCategoria";
             this.btnLupaCategoria.Size = new System.Drawing.Size(28, 23);
@@ -148,68 +155,78 @@
             this.btnLupaCategoria.Text = ":::";
             this.btnLupaCategoria.UseVisualStyleBackColor = true;
             // 
-            // btnNew
-            // 
-            this.btnNew.Location = new System.Drawing.Point(907, 30);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(85, 73);
-            this.btnNew.TabIndex = 11;
-            this.btnNew.Text = "Nuevo";
-            this.btnNew.UseVisualStyleBackColor = true;
-            // 
             // btnUpdate
             // 
+            this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUpdate.Location = new System.Drawing.Point(907, 109);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(85, 73);
+            this.btnUpdate.Size = new System.Drawing.Size(116, 73);
             this.btnUpdate.TabIndex = 12;
+            this.btnUpdate.TabStop = false;
             this.btnUpdate.Text = "Actualizar";
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // btnDelete
             // 
+            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
+            this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDelete.Location = new System.Drawing.Point(907, 188);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(85, 73);
+            this.btnDelete.Size = new System.Drawing.Size(116, 73);
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Eliminar";
+            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnReport
             // 
             this.btnReport.Location = new System.Drawing.Point(907, 267);
             this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(85, 73);
+            this.btnReport.Size = new System.Drawing.Size(116, 73);
             this.btnReport.TabIndex = 14;
             this.btnReport.Text = "Reporte";
             this.btnReport.UseVisualStyleBackColor = true;
             // 
             // btnClose
             // 
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClose.Location = new System.Drawing.Point(907, 346);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(85, 73);
+            this.btnClose.Size = new System.Drawing.Size(116, 73);
             this.btnClose.TabIndex = 15;
             this.btnClose.Text = "Salir";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = true;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(288, 106);
+            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancel.Location = new System.Drawing.Point(292, 107);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(85, 35);
+            this.btnCancel.Size = new System.Drawing.Size(125, 76);
             this.btnCancel.TabIndex = 16;
             this.btnCancel.Text = "Cancelar";
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Visible = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(393, 106);
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(440, 106);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(85, 35);
+            this.btnSave.Size = new System.Drawing.Size(121, 76);
             this.btnSave.TabIndex = 17;
             this.btnSave.Text = "Guardar";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Visible = false;
             // 
             // label5
             // 
@@ -224,6 +241,7 @@
             // 
             this.txtStockActual.Location = new System.Drawing.Point(80, 106);
             this.txtStockActual.Name = "txtStockActual";
+            this.txtStockActual.ReadOnly = true;
             this.txtStockActual.Size = new System.Drawing.Size(63, 20);
             this.txtStockActual.TabIndex = 19;
             // 
@@ -235,6 +253,7 @@
             this.btnSearch.TabIndex = 22;
             this.btnSearch.Text = ":::";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
             // 
@@ -252,11 +271,25 @@
             this.label6.TabIndex = 20;
             this.label6.Text = "Buscar:";
             // 
+            // btnNew
+            // 
+            this.btnNew.Image = ((System.Drawing.Image)(resources.GetObject("btnNew.Image")));
+            this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNew.Location = new System.Drawing.Point(907, 30);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(116, 73);
+            this.btnNew.TabIndex = 23;
+            this.btnNew.Text = "Nuevo";
+            this.btnNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Frm_Articulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1005, 432);
+            this.ClientSize = new System.Drawing.Size(1036, 432);
+            this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label6);
@@ -268,7 +301,6 @@
             this.Controls.Add(this.btnReport);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnLupaCategoria);
             this.Controls.Add(this.btnLupaMedida);
             this.Controls.Add(this.txtCategoria);
@@ -302,7 +334,6 @@
         private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.Button btnLupaMedida;
         private System.Windows.Forms.Button btnLupaCategoria;
-        private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnReport;
@@ -314,5 +345,6 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnNew;
     }
 }

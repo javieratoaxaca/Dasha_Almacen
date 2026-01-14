@@ -37,6 +37,33 @@ namespace Dasha_Almancen.Presentacion
 
 
         }
+        private void EstadoTxt(bool lEdo)
+        {
+            txtArticulo.ReadOnly=!lEdo;
+            txtMarca.ReadOnly=!lEdo;
+            txtStockActual.ReadOnly=!lEdo;
+        }
+        private void EstadoBtnProceso(bool lEdo)
+        {
+            btnLupaCategoria.Enabled=lEdo;
+            btnLupaMedida.Enabled = lEdo;
+            btnCancel.Visible=lEdo;
+            btnSave.Visible=lEdo;
+
+            txtSearch.ReadOnly=lEdo;
+            btnSearch.Enabled=!lEdo;
+            dtgvArticulos.Enabled=!lEdo;
+        }
+
+        private void EstadoBtnPrincipal (bool lEdo)
+        {
+            btnNew.Enabled=lEdo;
+            btnUpdate.Enabled=lEdo;
+            btnDelete.Enabled=lEdo;
+            btnReport.Enabled=lEdo;
+            btnClose.Enabled=lEdo;
+        }
+
         private void Listado_Art(string cTexto)
         {
             D_Articulos dt = new D_Articulos();
@@ -47,6 +74,35 @@ namespace Dasha_Almancen.Presentacion
         private void Frm_Articulos_Load(object sender, EventArgs e)
         {
             this.Listado_Art("%");
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            this.Listado_Art("%"+txtSearch.Text.Trim()+"%");
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            this.EstadoTxt(true);
+            this.EstadoBtnProceso(true);
+            this.EstadoBtnPrincipal(false);
+            txtArticulo.Focus();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.EstadoTxt(false);
+            this.EstadoBtnProceso(false);
+            this.EstadoBtnPrincipal(true);
+            txtSearch.Focus();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.EstadoTxt(true);
+            this.EstadoBtnProceso(true);
+            this.EstadoBtnPrincipal(false);
+            txtArticulo.Focus();
         }
     }
 }
