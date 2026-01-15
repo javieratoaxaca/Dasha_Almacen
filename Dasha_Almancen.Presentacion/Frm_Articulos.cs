@@ -116,11 +116,14 @@ namespace Dasha_Almancen.Presentacion
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            CodArticulo = 0;
+            edoSave = 0;
+            LimpiarCajasTxt();
             EstadoTxt(false);
             EstadoBtnProceso(false);
             EstadoBtnPrincipal(true);
             txtSearch.Focus();
-            LimpiarCajasTxt(); 
+             
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -136,7 +139,7 @@ namespace Dasha_Almancen.Presentacion
         private void btnSave_Click(object sender, EventArgs e)
         {
            // edoSave= 1;
-            string respuesta = "";
+            string respuesta;
             DateTime ahora= DateTime.Now;
             P_Articulos p_Articulos = new P_Articulos();
             D_Articulos d_Articulos = new D_Articulos();
@@ -159,8 +162,10 @@ namespace Dasha_Almancen.Presentacion
                 EstadoBtnProceso(false);
                 EstadoBtnPrincipal(true);        
                 LimpiarCajasTxt();
-                MessageBox.Show("Los datos se grabaron correctamente","Aviso del Sistema",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 Listado_Art("");
+                edoSave = 0;
+                MessageBox.Show("Los datos se grabaron correctamente","Aviso del Sistema",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                
              }
             else
             {
@@ -182,6 +187,33 @@ namespace Dasha_Almancen.Presentacion
         private void dtgvArticulos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             SeleccionItem();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (CodArticulo>0)
+            {
+                string respuesta;
+                D_Articulos d_Articulos = new D_Articulos();
+                respuesta=d_Articulos.DeleteArticulos(CodArticulo);
+                if (respuesta.Equals("OK"))
+                {
+                    LimpiarCajasTxt();
+                    Listado_Art("");
+                    CodArticulo = 0;
+                    MessageBox.Show("Registro Eliminado Correctamente", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No se tiene ningun registro seleccionado", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Frm_Articulos form = new Frm_Articulos();
+            form.Close();
         }
     }
 }

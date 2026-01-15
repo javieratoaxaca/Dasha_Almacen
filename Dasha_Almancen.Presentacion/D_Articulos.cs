@@ -97,7 +97,7 @@ namespace Dasha_Almancen.Presentacion
         public string SaveArticulos(int Opt,P_Articulos objArticulos)
         {
             string respuesta = "";
-            string sqlTarea = "";
+            string sqlTarea;
             MySqlConnection sqlCnx = new MySqlConnection();
             try
             {
@@ -144,6 +144,29 @@ namespace Dasha_Almancen.Presentacion
             return respuesta;
         }
 
+        public string DeleteArticulos(int nCodigoArticulo)
+        {
+            string respuesta = "";
+            string sqlTarea;
+            MySqlConnection sqlCnx = new MySqlConnection();
+            try
+            {
+                sqlCnx = Cnx.getInstancia().CrearConexionMySQL();
+                sqlTarea = "DELETE FROM tb_articulos WHERE codigo_art='"+nCodigoArticulo+"';";
 
+                MySqlCommand cmd = new MySqlCommand(sqlTarea, sqlCnx);
+                sqlCnx.Open();
+                respuesta = cmd.ExecuteNonQuery() >= 1 ? "OK" : "No se pudo eliminar el registro";
+            }
+            catch (Exception ex)
+            {
+                respuesta = ex.Message;
+            }
+            finally
+            {
+                if (sqlCnx.State != ConnectionState.Open) sqlCnx.Close();
+            }
+            return respuesta;
+        }
     }
 }
