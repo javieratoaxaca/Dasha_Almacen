@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Articulos));
-            this.dtgvArticulos = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtArticulo = new System.Windows.Forms.TextBox();
@@ -52,20 +51,9 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnNew = new System.Windows.Forms.Button();
+            this.dtgvArticulos = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvArticulos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dtgvArticulos
-            // 
-            this.dtgvArticulos.AllowUserToAddRows = false;
-            this.dtgvArticulos.AllowUserToDeleteRows = false;
-            this.dtgvArticulos.AllowUserToOrderColumns = true;
-            this.dtgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvArticulos.Location = new System.Drawing.Point(12, 229);
-            this.dtgvArticulos.Name = "dtgvArticulos";
-            this.dtgvArticulos.ReadOnly = true;
-            this.dtgvArticulos.Size = new System.Drawing.Size(879, 190);
-            this.dtgvArticulos.TabIndex = 0;
             // 
             // label1
             // 
@@ -167,6 +155,7 @@
             this.btnUpdate.Text = "Actualizar";
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -182,11 +171,14 @@
             // 
             // btnReport
             // 
+            this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
+            this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReport.Location = new System.Drawing.Point(907, 267);
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(116, 73);
             this.btnReport.TabIndex = 14;
             this.btnReport.Text = "Reporte";
+            this.btnReport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReport.UseVisualStyleBackColor = true;
             // 
             // btnClose
@@ -227,6 +219,7 @@
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Visible = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label5
             // 
@@ -284,11 +277,25 @@
             this.btnNew.UseVisualStyleBackColor = true;
             this.btnNew.Click += new System.EventHandler(this.button1_Click);
             // 
+            // dtgvArticulos
+            // 
+            this.dtgvArticulos.AllowUserToAddRows = false;
+            this.dtgvArticulos.AllowUserToDeleteRows = false;
+            this.dtgvArticulos.AllowUserToOrderColumns = true;
+            this.dtgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvArticulos.Location = new System.Drawing.Point(17, 237);
+            this.dtgvArticulos.Name = "dtgvArticulos";
+            this.dtgvArticulos.ReadOnly = true;
+            this.dtgvArticulos.Size = new System.Drawing.Size(884, 183);
+            this.dtgvArticulos.TabIndex = 24;
+            this.dtgvArticulos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvArticulos_CellClick);
+            // 
             // Frm_Articulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1036, 432);
+            this.Controls.Add(this.dtgvArticulos);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
@@ -311,7 +318,6 @@
             this.Controls.Add(this.txtArticulo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dtgvArticulos);
             this.Name = "Frm_Articulos";
             this.Text = "Frm_Articulos";
             this.Load += new System.EventHandler(this.Frm_Articulos_Load);
@@ -322,8 +328,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dtgvArticulos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtArticulo;
@@ -346,5 +350,6 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.DataGridView dtgvArticulos;
     }
 }
