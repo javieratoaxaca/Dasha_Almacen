@@ -71,8 +71,9 @@ namespace Dasha_Almancen.Presentacion
                         "FROM tb_articulos  a " +
                         "INNER JOIN tb_unidades_medidas b ON a.codigo_um = b.codigo_um " +
                         "INNER JOIN tb_categorias c ON a.codigo_cat = c.codigo_cat " +
-                        "WHERE a.descripcion_art LIKE @texto " +
-                        "ORDER BY a.codigo_art";
+                        "WHERE  a.descripcion_art LIKE @texto  " +
+                        " AND a.estado=1 "+
+                        " ORDER BY a.codigo_art";
 
                     using (MySqlCommand cmd = new MySqlCommand(sqlTarea, sqlCnx))
                     {
@@ -106,14 +107,14 @@ namespace Dasha_Almancen.Presentacion
                 {
                     
                     
-                    sqlTarea = "insert into tb_articulos(descripcion_art,marca_art,codigo_um,codigo_cat,stock_actual,fecha_crea,fecha_mod)" +
+                    sqlTarea = "insert into tb_articulos(descripcion_art,marca_art,codigo_um,codigo_cat,stock_actual,fecha_crea,fecha_mod,estado)" +
                         "values('" + objArticulos.Descripcion_Ar+"', '" 
                                    + objArticulos.Marca_Ar + "', " 
                                    + objArticulos.Codigo_Um + ", " 
                                    + objArticulos.Codigo_Ca + ", " 
                                    + objArticulos.Stock_Actual + ",  '" 
                                    + objArticulos.Fecha_crea + "',  '"
-                                   + objArticulos.Fecha_Modifica+ "');";
+                                   + objArticulos.Fecha_Modifica+ "',1);";
                     
                 }
                 else // actualizar registro
@@ -146,14 +147,17 @@ namespace Dasha_Almancen.Presentacion
 
         public string DeleteArticulos(int nCodigoArticulo)
         {
+
             string respuesta = "";
             string sqlTarea;
             MySqlConnection sqlCnx = new MySqlConnection();
             try
             {
                 sqlCnx = Cnx.getInstancia().CrearConexionMySQL();
-                sqlTarea = "DELETE FROM tb_articulos WHERE codigo_art='"+nCodigoArticulo+"';";
-
+                //sqlTarea = "DELETE FROM tb_articulos WHERE codigo_art='" + nCodigoArticulo + "';";
+                
+                sqlTarea = "UPDATE tb_articulos SET estado=0 WHERE codigo_art='"+nCodigoArticulo+"';";
+                 
                 MySqlCommand cmd = new MySqlCommand(sqlTarea, sqlCnx);
                 sqlCnx.Open();
                 respuesta = cmd.ExecuteNonQuery() >= 1 ? "OK" : "No se pudo eliminar el registro";

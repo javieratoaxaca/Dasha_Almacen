@@ -16,5 +16,6 @@ namespace Dasha_Almancen.Presentacion
         public decimal Stock_Actual {  get; set; }
         public string Fecha_crea { get; set; }
         public string Fecha_Modifica { get; set; }
+        public int Estado {  get; set; }
     }
 }

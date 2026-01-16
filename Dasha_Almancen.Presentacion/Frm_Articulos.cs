@@ -103,7 +103,7 @@ namespace Dasha_Almancen.Presentacion
         private void Frm_Articulos_Load(object sender, EventArgs e)
         {
             Listado_Art("");
-           /* D_Articulos d = new D_Articulos();
+            /*D_Articulos d = new D_Articulos();
             DataTable dt = d.ListadoArticulos("");
             MessageBox.Show("Filas: " + dt.Rows.Count);
             dtgvArticulos.DataSource = dt;*/
@@ -212,8 +212,7 @@ namespace Dasha_Almancen.Presentacion
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Frm_Articulos form = new Frm_Articulos();
-            form.Close();
+            Close();
         }
     }
 }

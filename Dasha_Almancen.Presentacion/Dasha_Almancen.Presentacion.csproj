@@ -48,6 +48,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cnx.cs" />
+    <Compile Include="dataSet_Articulos.cs">
+      <DependentUpon>dataSet_Articulos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dataSet_Articulos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataSet_Articulos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="D_Articulos.cs" />
     <Compile Include="Frm_Articulos.cs">
       <SubType>Form</SubType>
@@ -71,6 +79,18 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Articulos.rdlc" />
+    <None Include="dataSet_Articulos.xsc">
+      <DependentUpon>dataSet_Articulos.xsd</DependentUpon>
+    </None>
+    <None Include="dataSet_Articulos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataSet_Articulos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dataSet_Articulos.xss">
+      <DependentUpon>dataSet_Articulos.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
