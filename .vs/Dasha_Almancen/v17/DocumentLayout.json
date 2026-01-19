@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|c:\\users\\1277_oax\\documents\\visual studio 2022\\projects\\dasha_almancen\\dasha_almancen.presentacion\\rpt_articulos.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
-      "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\rpt_articulos.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|c:\\users\\1277_oax\\documents\\visual studio 2022\\projects\\dasha_almancen\\dasha_almancen.presentacion\\dataset_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\dataset_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\dasha_almancen.presentacion\\frm_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\frm_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\dasha_almancen.presentacion\\frm_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\frm_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|c:\\users\\1277_oax\\documents\\visual studio 2022\\projects\\dasha_almancen\\dasha_almancen.presentacion\\frm_rpt_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\frm_rpt_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\dasha_almancen.presentacion\\d_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\d_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\dasha_almancen.presentacion\\p_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\p_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|c:\\users\\1277_oax\\documents\\visual studio 2022\\projects\\dasha_almancen\\dasha_almancen.presentacion\\frm_rpt_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\frm_rpt_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\dasha_almancen.presentacion\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|c:\\users\\1277_oax\\documents\\visual studio 2022\\projects\\dasha_almancen\\dasha_almancen.presentacion\\rpt_articulos.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\rpt_articulos.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\dasha_almancen.presentacion\\frm_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\frm_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\dasha_almancen.presentacion\\frm_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\frm_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\dasha_almancen.presentacion\\cnx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\cnx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\dasha_almancen.presentacion\\p_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67376F16-2CDA-45FD-B9A5-4503A12ECAB8}|Dasha_Almancen.Presentacion\\Dasha_Almancen.Presentacion.csproj|solutionrelative:dasha_almancen.presentacion\\p_articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,78 +47,94 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Frm_Rpt_Articulos.cs",
+              "DocumentMoniker": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Frm_Rpt_Articulos.cs",
+              "RelativeDocumentMoniker": "Dasha_Almancen.Presentacion\\Frm_Rpt_Articulos.cs",
+              "ToolTip": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Frm_Rpt_Articulos.cs",
+              "RelativeToolTip": "Dasha_Almancen.Presentacion\\Frm_Rpt_Articulos.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAkwCkAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T22:46:30.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "rpt_Articulos.rdlc [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\rpt_Articulos.rdlc",
               "RelativeDocumentMoniker": "Dasha_Almancen.Presentacion\\rpt_Articulos.rdlc",
               "ToolTip": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\rpt_Articulos.rdlc [Dise\u00F1o]",
               "RelativeToolTip": "Dasha_Almancen.Presentacion\\rpt_Articulos.rdlc [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2026-01-16T22:58:19.107Z",
+              "WhenOpened": "2026-01-19T22:47:01.947Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dataSet_Articulos.cs",
-              "DocumentMoniker": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\dataSet_Articulos.cs",
-              "RelativeDocumentMoniker": "Dasha_Almancen.Presentacion\\dataSet_Articulos.cs",
-              "ToolTip": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\dataSet_Articulos.cs",
-              "RelativeToolTip": "Dasha_Almancen.Presentacion\\dataSet_Articulos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "DocumentIndex": 2,
+              "Title": "Frm_Rpt_Articulos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Frm_Rpt_Articulos.cs",
+              "RelativeDocumentMoniker": "Dasha_Almancen.Presentacion\\Frm_Rpt_Articulos.cs",
+              "ToolTip": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Frm_Rpt_Articulos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Dasha_Almancen.Presentacion\\Frm_Rpt_Articulos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T22:38:51.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-19T22:05:26.702Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "Dasha_Almancen.Presentacion\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Properties\\Resources.resx",
-              "RelativeToolTip": "Dasha_Almancen.Presentacion\\Properties\\Resources.resx",
-              "ViewState": "AQIAAI0AAAAAAAAAAADwv58AAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-01-14T21:48:09.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Frm_Articulos.cs",
               "DocumentMoniker": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Frm_Articulos.cs",
               "RelativeDocumentMoniker": "Dasha_Almancen.Presentacion\\Frm_Articulos.cs",
               "ToolTip": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Frm_Articulos.cs",
               "RelativeToolTip": "Dasha_Almancen.Presentacion\\Frm_Articulos.cs",
-              "ViewState": "AQIAAMMAAAAAAAAAAAAiwNYAAAAMAAAA",
+              "ViewState": "AQIAAMgAAAAAAAAAAAAiwNwAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T22:19:23.764Z"
+              "WhenOpened": "2026-01-13T22:19:23.764Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Frm_Articulos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Frm_Articulos.cs",
               "RelativeDocumentMoniker": "Dasha_Almancen.Presentacion\\Frm_Articulos.cs",
               "ToolTip": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Frm_Articulos.cs [Dise\u00F1o]",
               "RelativeToolTip": "Dasha_Almancen.Presentacion\\Frm_Articulos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T22:15:51.74Z"
+              "WhenOpened": "2026-01-13T22:15:51.74Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "Cnx.cs",
+              "DocumentMoniker": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Cnx.cs",
+              "RelativeDocumentMoniker": "Dasha_Almancen.Presentacion\\Cnx.cs",
+              "ToolTip": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Cnx.cs",
+              "RelativeToolTip": "Dasha_Almancen.Presentacion\\Cnx.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T22:44:18.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "D_Articulos.cs",
               "DocumentMoniker": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\D_Articulos.cs",
               "RelativeDocumentMoniker": "Dasha_Almancen.Presentacion\\D_Articulos.cs",
               "ToolTip": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\D_Articulos.cs",
               "RelativeToolTip": "Dasha_Almancen.Presentacion\\D_Articulos.cs",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAowJYAAAADAAAA",
+              "ViewState": "AQIAADoAAAAAAAAAAAAgwFYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-09T22:19:36.119Z"
+              "WhenOpened": "2026-01-09T22:19:36.119Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "P_Articulos.cs",
               "DocumentMoniker": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\P_Articulos.cs",
               "RelativeDocumentMoniker": "Dasha_Almancen.Presentacion\\P_Articulos.cs",
@@ -126,19 +142,8 @@
               "RelativeToolTip": "Dasha_Almancen.Presentacion\\P_Articulos.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T22:31:03.266Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Cnx.cs",
-              "DocumentMoniker": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Cnx.cs",
-              "RelativeDocumentMoniker": "Dasha_Almancen.Presentacion\\Cnx.cs",
-              "ToolTip": "C:\\Users\\1277_oax\\Documents\\Visual Studio 2022\\Projects\\Dasha_Almancen\\Dasha_Almancen.Presentacion\\Cnx.cs",
-              "RelativeToolTip": "Dasha_Almancen.Presentacion\\Cnx.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwCAAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T22:44:18.786Z"
+              "WhenOpened": "2026-01-08T22:31:03.266Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -214,5 +214,11 @@ namespace Dasha_Almancen.Presentacion
         {
             Close();
         }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            Frm_Rpt_Articulos oRpt = new Frm_Rpt_Articulos();
+            oRpt.ShowDialog();
+        }
     }
 }
