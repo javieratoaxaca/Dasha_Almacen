@@ -42,9 +42,7 @@ namespace Dasha_Almancen.Presentacion
                        " WHERE  a.descripcion_art LIKE '"+ cTexto + "' "+
                        " AND a.estado=1 " +
                        " ORDER BY a.codigo_art";
-    
-                    
-             
+                
                     MySqlDataAdapter da = new MySqlDataAdapter(sqlTarea, conn);
                     DataSet ds = new DataSet();
                     da.Fill(ds);
