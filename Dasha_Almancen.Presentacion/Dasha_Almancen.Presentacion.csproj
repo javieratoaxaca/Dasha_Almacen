@@ -82,6 +82,8 @@
       <DependentUpon>dataSet_Articulos.xsd</DependentUpon>
     </Compile>
     <Compile Include="D_Articulos.cs" />
+    <Compile Include="D_Categorias.cs" />
+    <Compile Include="D_Medidas.cs" />
     <Compile Include="Frm_Articulos.cs">
       <SubType>Form</SubType>
     </Compile>

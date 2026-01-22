@@ -18,8 +18,69 @@ namespace Dasha_Almancen.Presentacion
         }
         #region "Mis Variables"
         int CodArticulo = 0;
+        int CodUdM = 0;
         int edoSave = 0;
+        int CodCat = 0;
         #endregion
+
+        #region "Mis Metodos para Categorias"
+        private void Formato_Categoria()
+        {
+            dtgvCategoria.Columns[0].Width = 150;
+            dtgvCategoria.Columns[0].HeaderText = "CATEGORIAS";
+            dtgvCategoria.Columns[1].Visible = false;
+        }
+        private void Listado_Categoria(string cTexto)
+        {
+
+            D_Categorias dt = new D_Categorias();
+            dtgvCategoria.DataSource = dt.ListadoCategoria();
+            Formato_Categoria();
+
+        }
+        private void SeleccionCategoria()
+        {
+            if (string.IsNullOrEmpty(Convert.ToString(dtgvCategoria.CurrentRow.Cells["codigo_cat"].Value)))
+            {
+                MessageBox.Show("Selecciona un Elemento de la lista", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                CodCat = Convert.ToInt32(dtgvCategoria.CurrentRow.Cells["codigo_cat"].Value);
+                txtCategoria.Text = Convert.ToString(dtgvCategoria.CurrentRow.Cells["descripcion_cat"].Value); ;
+            }
+        }
+        #endregion
+
+        #region "Mis Metodos para Unidades de Medida"
+        private void Formato_Medida()
+        {
+            dtgvMedida.Columns[0].Width = 150;
+            dtgvMedida.Columns[0].HeaderText = "MEDIDAS";
+            dtgvMedida.Columns[1].Visible = false;
+        }
+        private void Listado_Medida(string cTexto)
+        {
+
+            D_Medidas dt = new D_Medidas();
+            dtgvMedida.DataSource = dt.ListadoMedidas();
+            Formato_Medida();
+
+        }
+        private void SeleccionUdM()
+        {
+            if (string.IsNullOrEmpty(Convert.ToString(dtgvMedida.CurrentRow.Cells["codigo_um"].Value)))
+            {
+                MessageBox.Show("Selecciona un Elemento de la lista", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                CodUdM = Convert.ToInt32(dtgvMedida.CurrentRow.Cells["codigo_um"].Value);
+                txtMedida.Text = Convert.ToString(dtgvMedida.CurrentRow.Cells["descripcion_um"].Value); ;
+            }
+        }
+        #endregion
+
         #region "Mis Metodos"
         private void Formato_Art()
         {
@@ -40,7 +101,7 @@ namespace Dasha_Almancen.Presentacion
             dtgvArticulos.Columns[7].Visible = false;
 
 
-        }
+        }    
         private void EstadoTxt(bool lEdo)
         {
             txtArticulo.ReadOnly=!lEdo;
@@ -72,7 +133,7 @@ namespace Dasha_Almancen.Presentacion
             txtCategoria.Text = "";
             txtMarca.Text = "";
             txtMedida.Text = "";
-            txtStockActual.Text = "";
+            txtStockActual.Text = "0";
         }
         private void Listado_Art(string cTexto)
         {
@@ -82,7 +143,6 @@ namespace Dasha_Almancen.Presentacion
           Formato_Art();
 
         }
-
         private void SeleccionItem()
         {
             if (string.IsNullOrEmpty(Convert.ToString( dtgvArticulos.CurrentRow.Cells["codigo_art"].Value)))
@@ -95,14 +155,18 @@ namespace Dasha_Almancen.Presentacion
                 txtArticulo.Text = Convert.ToString(dtgvArticulos.CurrentRow.Cells["descripcion_art"].Value);
                 txtMarca.Text = Convert.ToString(dtgvArticulos.CurrentRow.Cells["marca_art"].Value);
                 txtMedida.Text= Convert.ToString(dtgvArticulos.CurrentRow.Cells["descripcion_um"].Value); ;
-                txtCategoria.Text = Convert.ToString(dtgvArticulos.CurrentRow.Cells["descripcion_cat"].Value); ;
-                txtStockActual.Text = Convert.ToString(dtgvArticulos.CurrentRow.Cells["stock_actual"].Value); ;
+                txtCategoria.Text = Convert.ToString(dtgvArticulos.CurrentRow.Cells["descripcion_cat"].Value); 
+                txtStockActual.Text = Convert.ToString(dtgvArticulos.CurrentRow.Cells["stock_actual"].Value);
+                CodUdM = Convert.ToInt32(dtgvArticulos.CurrentRow.Cells["codigo_um"].Value);
+                CodCat= Convert.ToInt32(dtgvArticulos.CurrentRow.Cells["codigo_cat"].Value);
             }
         }
         #endregion 
         private void Frm_Articulos_Load(object sender, EventArgs e)
         {
             Listado_Art("");
+            Listado_Medida("");
+            Listado_Categoria("");
             /*D_Articulos d = new D_Articulos();
             DataTable dt = d.ListadoArticulos("");
             MessageBox.Show("Filas: " + dt.Rows.Count);
@@ -143,14 +207,14 @@ namespace Dasha_Almancen.Presentacion
             DateTime ahora= DateTime.Now;
             P_Articulos p_Articulos = new P_Articulos();
             D_Articulos d_Articulos = new D_Articulos();
+           
+
             p_Articulos.Codigo_Ar = CodArticulo;
 
             p_Articulos.Descripcion_Ar=txtArticulo.Text;
             p_Articulos.Marca_Ar = txtMarca.Text ;
-            //p_Articulos.Codigo_Um = Convert.ToInt32(txtMedida.Text);
-            //p_Articulos.Codigo_Ca = Convert.ToInt32(txtCategoria.Text);
-            p_Articulos.Codigo_Um=1;           
-            p_Articulos.Codigo_Ca = 1;
+            p_Articulos.Codigo_Um = CodUdM;     
+            p_Articulos.Codigo_Ca = CodCat; 
             p_Articulos.Stock_Actual = Convert.ToDecimal(txtStockActual.Text);
             p_Articulos.Fecha_crea=ahora.ToString("yyyy-MM-dd HH:mm:ss"); 
             p_Articulos.Fecha_Modifica= ahora.ToString("yyyy-MM-dd HH:mm:ss");
@@ -164,6 +228,9 @@ namespace Dasha_Almancen.Presentacion
                 LimpiarCajasTxt();
                 Listado_Art("");
                 edoSave = 0;
+                CodArticulo = 0;
+                CodUdM = 0;
+                CodCat = 0;
                 MessageBox.Show("Los datos se grabaron correctamente","Aviso del Sistema",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 
              }
@@ -188,7 +255,6 @@ namespace Dasha_Almancen.Presentacion
         {
             SeleccionItem();
         }
-
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (CodArticulo>0)
@@ -219,6 +285,39 @@ namespace Dasha_Almancen.Presentacion
         {
             Frm_Rpt_Articulos oRpt = new Frm_Rpt_Articulos();
             oRpt.ShowDialog();
+        }
+
+        private void btnLupaMedida_Click(object sender, EventArgs e)
+        {
+            Pnl_Medida.Location = btnLupaMedida.Location;
+            Pnl_Medida.Visible = true;
+        }
+
+        private void btnLupaCategoria_Click(object sender, EventArgs e)
+        {
+            PnlCategoria.Location =btnLupaCategoria.Location;
+            PnlCategoria.Visible = true;
+        }
+
+        private void btnBackMedida_Click(object sender, EventArgs e)
+        {
+            Pnl_Medida.Visible=false;
+        }
+
+        private void btnBackCategoria_Click(object sender, EventArgs e)
+        {
+            PnlCategoria.Visible=false;
+        }
+        private void dtgvMedida_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SeleccionUdM();
+            Pnl_Medida.Visible = false;
+        }
+
+        private void dtgvCategoria_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SeleccionCategoria();
+            PnlCategoria.Visible = false;
         }
     }
 }
